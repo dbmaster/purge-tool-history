@@ -1,0 +1,10 @@
+<tools>
+    <tool id="purge-tool-history" title="Purge Tool History">
+        <description>A dbmaster plugin to purge tool execution history</description>
+        <parameters>
+            <parameter name="p_tool_id" title="Tool-Id" type="text" required="false" />
+            <parameter name="p_up_to_date" title="Preserve last N days" type="integer" required="true" />
+        </parameters>
+        <output  script="purge-tool-history.groovy" type="html" />
+    </tool>
+</tools>
